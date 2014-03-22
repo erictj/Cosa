@@ -35,7 +35,7 @@
 #define PCIE (_BV(PCIE0))
 #elif defined(__ARDUINO_MIGHTY__)
 #define PCIE (_BV(PCIE3) | _BV(PCIE2) | _BV(PCIE1) | _BV(PCIE0))
-#elif defined(__ARDUINO_MEGA__) || defined(__ARDUINO_STANDARD__)
+#elif defined(__ARDUINO_MEGA__) || defined(__ARDUINO_STANDARD__) || defined(__PINOCCIO_SCOUT__)
 #define PCIE (_BV(PCIE2) | _BV(PCIE1) | _BV(PCIE0))
 #endif
 
@@ -144,7 +144,7 @@ PCINT_ISR(0, 0, 0);
 PCINT_ISR(0, 0, 0);
 PCINT_ISR(1, 1, 8);
 
-#elif defined(__ARDUINO_STANDARD__)
+#elif defined(__ARDUINO_STANDARD__) || defined(__PINOCCIO_SCOUT__)
 
 PCINT_ISR(0, 1, 8);
 PCINT_ISR(1, 2, 14);

@@ -106,6 +106,14 @@ public:
   static void timer3_enable() { power_timer3_enable(); }
   static void timer3_disable() { power_timer3_disable(); }
 
+#elif defined(__PINOCCIO_SCOUT__)
+
+  static void usart1_enable() { power_usart1_enable(); }
+  static void usart1_disable() { power_usart1_disable(); }
+
+  static void timer3_enable() { power_timer3_enable(); }
+  static void timer3_disable() { power_timer3_disable(); }
+
 #elif defined(__ARDUINO_MEGA__)
   
   static void usart1_enable() { power_usart1_enable(); }
