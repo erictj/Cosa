@@ -244,7 +244,7 @@ protected:
   friend void USART_UDRE_vect(void);
   friend void USART_RX_vect(void);
   friend void USART_TX_vect(void);
-#if defined(__ARDUINO_MIGHTY__)
+#if defined(__ARDUINO_MIGHTY__) || defined(__PINOCCIO_SCOUT__)
   friend void USART1_UDRE_vect(void);
   friend void USART1_RX_vect(void);
   friend void USART1_TX_vect(void);
